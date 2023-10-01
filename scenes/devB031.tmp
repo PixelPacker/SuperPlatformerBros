@@ -2,15 +2,16 @@
 
 [ext_resource type="Script" path="res://scripts/player/player_camera_controller.gd" id="1_ctke2"]
 [ext_resource type="TileSet" uid="uid://bh7xigjsq8604" path="res://assets/Tile Maps/Pixel Adventure/Foreground Tilemap.tres" id="1_ion05"]
+[ext_resource type="Script" path="res://scripts/managers/scene_manager.gd" id="1_nkf1e"]
 [ext_resource type="TileSet" uid="uid://dy8tk5p3vv7h6" path="res://assets/Tile Maps/Pixel Adventure/Background Tilemap.tres" id="2_16sp7"]
 [ext_resource type="SpriteFrames" uid="uid://7kkq04vr4n5" path="res://assets/Animations/ninja_frog_animation.tres" id="3_8xpjs"]
 [ext_resource type="Script" path="res://scripts/player/player_controller.gd" id="3_ii68g"]
-[ext_resource type="Script" path="res://scripts/player/player_anim_controller.gd" id="6_r7yqw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jsbqh"]
-size = Vector2(23, 27)
+size = Vector2(23, 24)
 
 [node name="Dev Test Level" type="Node2D"]
+script = ExtResource("1_nkf1e")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(194, -114)
@@ -35,13 +36,10 @@ position = Vector2(36, -21)
 script = ExtResource("3_ii68g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(-0.5, 2.5)
+position = Vector2(-0.5, 1)
 shape = SubResource("RectangleShape2D_jsbqh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 z_index = 2
 sprite_frames = ExtResource("3_8xpjs")
-animation = &"idle"
-frame = 8
-frame_progress = 0.0340659
-script = ExtResource("6_r7yqw")
+animation = &"run"
