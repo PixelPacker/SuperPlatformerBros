@@ -1,0 +1,25 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dy8tk5p3vv7h6"]
+
+[ext_resource type="Texture2D" uid="uid://bwc38jpirs1ib" path="res://assets/pixel-adventure-1-pack/Background/Blue.png" id="1_4udnh"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h3wc6"]
+texture = ExtResource("1_4udnh")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[resource]
+sources/1 = SubResource("TileSetAtlasSource_h3wc6")
