@@ -4,7 +4,7 @@ const speed = 200.0
 const jumpVelocity = -350.0
 const jumpFallingMulti = 1.25
 const lowJumpFallingMulti = 1.50
-const coyoteTime : int = 1500
+const coyoteTime : int = 500
 
 var facingLeft : bool = false
 var lastTimeOnGround : float
@@ -25,7 +25,7 @@ func _physics_process(delta):
 		else:
 			velocity.y += (gravity * jumpFallingMulti) * delta
 
-	if Input.is_action_just_pressed("jump") and canJump():
+	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jumpVelocity
 
 	var direction = Input.get_axis("move_left", "move_right")
@@ -37,17 +37,15 @@ func _physics_process(delta):
 	setFacing()
 	move_and_slide()
 
+# Currently unused due to an oversight that allows for the player to jump multiple times
+# TODO: FIX THIS
 func canJump() -> bool:
 	var currentTime : float = Time.get_ticks_msec()
 	if is_on_floor():
 		lastTimeOnGround = currentTime
 	if currentTime <= (lastTimeOnGround + coyoteTime):
-		#if !is_on_floor():
-		#	print("You're in a cartoon")
 		return true
 	else:
-		#print("Current Time: ", currentTime)
-		#print("Allowed Time: ", (lastTimeOnGround + coyoteTime))
 		return false
 
 func setFacing():
