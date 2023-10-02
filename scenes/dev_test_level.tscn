@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://4cj8g20pnqg3"]
+[gd_scene load_steps=11 format=3 uid="uid://4cj8g20pnqg3"]
 
 [ext_resource type="Script" path="res://scripts/player/player_camera_controller.gd" id="1_ctke2"]
 [ext_resource type="TileSet" uid="uid://bh7xigjsq8604" path="res://assets/Tile Maps/Pixel Adventure/Foreground Tilemap.tres" id="1_ion05"]
@@ -6,16 +6,12 @@
 [ext_resource type="SpriteFrames" uid="uid://7kkq04vr4n5" path="res://assets/Animations/ninja_frog_animation.tres" id="3_8xpjs"]
 [ext_resource type="Script" path="res://scripts/player/player_controller.gd" id="3_ii68g"]
 [ext_resource type="Script" path="res://scripts/player/player_anim_controller.gd" id="6_r7yqw"]
+[ext_resource type="Material" uid="uid://cr0p6r350y8jf" path="res://assets/particles/player/walking_dust.tres" id="7_662d4"]
 [ext_resource type="Texture2D" uid="uid://d2npii4qrobx" path="res://assets/pixel-adventure-1-pack/Other/Dust Particle.png" id="7_mmmxl"]
+[ext_resource type="Script" path="res://scripts/player/player_particle_controller.gd" id="9_axaet"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jsbqh"]
 size = Vector2(23, 27)
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_eu6rt"]
-particle_flag_disable_z = true
-gravity = Vector3(0, 98, 0)
-orbit_velocity_min = 0.0
-orbit_velocity_max = 0.0
 
 [node name="Dev Test Level" type="Node2D"]
 
@@ -55,10 +51,13 @@ script = ExtResource("6_r7yqw")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="Player"]
 z_index = 2
+position = Vector2(-5, 15)
 emitting = false
-amount = 1
-process_material = SubResource("ParticleProcessMaterial_eu6rt")
+amount = 2
+process_material = ExtResource("7_662d4")
 texture = ExtResource("7_mmmxl")
-lifetime = 0.25
-randomness = 1.0
+lifetime = 0.5
+explosiveness = 0.1
+randomness = 0.5
 fixed_fps = 60
+script = ExtResource("9_axaet")
