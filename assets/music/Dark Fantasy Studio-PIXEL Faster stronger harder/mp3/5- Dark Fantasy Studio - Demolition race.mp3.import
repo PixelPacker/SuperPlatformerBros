@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqjhsgwts8ir2"
+path="res://.godot/imported/5- Dark Fantasy Studio - Demolition race.mp3-c841d6d46cb1b45697412877b05eedcd.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Dark Fantasy Studio-PIXEL Faster stronger harder/mp3/5- Dark Fantasy Studio - Demolition race.mp3"
+dest_files=["res://.godot/imported/5- Dark Fantasy Studio - Demolition race.mp3-c841d6d46cb1b45697412877b05eedcd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

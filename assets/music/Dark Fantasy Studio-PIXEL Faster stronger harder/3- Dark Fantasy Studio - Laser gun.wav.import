@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b1wpatlqtb2wr"
+path="res://.godot/imported/3- Dark Fantasy Studio - Laser gun.wav-f27146cb6276b4d0bd2110f326d14661.sample"
+
+[deps]
+
+source_file="res://assets/music/Dark Fantasy Studio-PIXEL Faster stronger harder/3- Dark Fantasy Studio - Laser gun.wav"
+dest_files=["res://.godot/imported/3- Dark Fantasy Studio - Laser gun.wav-f27146cb6276b4d0bd2110f326d14661.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

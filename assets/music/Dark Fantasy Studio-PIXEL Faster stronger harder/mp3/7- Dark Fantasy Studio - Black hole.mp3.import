@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://rtif57y8jjw7"
+path="res://.godot/imported/7- Dark Fantasy Studio - Black hole.mp3-3976412a1e4a11254d2f6f3457edccc0.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Dark Fantasy Studio-PIXEL Faster stronger harder/mp3/7- Dark Fantasy Studio - Black hole.mp3"
+dest_files=["res://.godot/imported/7- Dark Fantasy Studio - Black hole.mp3-3976412a1e4a11254d2f6f3457edccc0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

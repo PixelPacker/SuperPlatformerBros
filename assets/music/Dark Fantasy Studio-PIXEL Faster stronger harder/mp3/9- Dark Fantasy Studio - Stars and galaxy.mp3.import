@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://djpup0jxvm7ln"
+path="res://.godot/imported/9- Dark Fantasy Studio - Stars and galaxy.mp3-15a61aa18899bd38d00b7d9896986e9b.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Dark Fantasy Studio-PIXEL Faster stronger harder/mp3/9- Dark Fantasy Studio - Stars and galaxy.mp3"
+dest_files=["res://.godot/imported/9- Dark Fantasy Studio - Stars and galaxy.mp3-15a61aa18899bd38d00b7d9896986e9b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

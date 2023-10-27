@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ctddcf4ef2gcf"
+path="res://.godot/imported/3- Dark Fantasy Studio - Laser gun.mp3-4056e6b44d28731b9a633e8ebd5004c0.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Dark Fantasy Studio-PIXEL Faster stronger harder/mp3/3- Dark Fantasy Studio - Laser gun.mp3"
+dest_files=["res://.godot/imported/3- Dark Fantasy Studio - Laser gun.mp3-4056e6b44d28731b9a633e8ebd5004c0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

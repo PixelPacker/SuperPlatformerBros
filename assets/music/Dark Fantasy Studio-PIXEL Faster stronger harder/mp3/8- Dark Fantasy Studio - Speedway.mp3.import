@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://1a6q54o7olvt"
+path="res://.godot/imported/8- Dark Fantasy Studio - Speedway.mp3-983f0ab0548828a9f03732c395b9fcc9.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Dark Fantasy Studio-PIXEL Faster stronger harder/mp3/8- Dark Fantasy Studio - Speedway.mp3"
+dest_files=["res://.godot/imported/8- Dark Fantasy Studio - Speedway.mp3-983f0ab0548828a9f03732c395b9fcc9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
