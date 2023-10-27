@@ -3,9 +3,11 @@
 [resource]
 lifetime_randomness = 1.0
 particle_flag_disable_z = true
-direction = Vector3(2.08165e-12, 1, 2.08165e-12)
+direction = Vector3(0, -10, 0)
 gravity = Vector3(2.08165e-12, 0.1, 2.08165e-12)
 initial_velocity_min = 1.0
 initial_velocity_max = 7.0
 orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
+scale_min = 0.25
+scale_max = 0.5
