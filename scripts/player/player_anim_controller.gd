@@ -2,7 +2,7 @@ extends AnimatedSprite2D
 
 func _process(_delta):
 	var playerVel : Vector2 = GameManager.player.get("velocity")
-	if(GameManager.player.get("facingLeft")):
+	if(GameManager.player.get("facing_left")):
 		flip_h = true
 	else:
 		flip_h = false

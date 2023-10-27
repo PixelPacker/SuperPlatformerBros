@@ -8,7 +8,7 @@ func _process(_delta):
 	var playerVel : Vector2 = GameManager.player.get("velocity")
 	if playerVel.x > 0 || playerVel.x < 0:
 		emitting = true
-		if GameManager.player.facingLeft:
+		if GameManager.player.facing_left:
 			position = facingLeftLoc
 		else:
 			position = facingRightLoc
