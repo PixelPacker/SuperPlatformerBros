@@ -28,18 +28,21 @@ func _physics_process(delta):
 		velocity.x = direction * speed
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
+
 	process_jumps(delta)
 	set_facing()
 	move_and_slide()
 
-func process_jumps(delta):
+func process_jumps(delta):	
 	if not is_on_floor() && current_time <= last_time_on_ground + coyote_time && not used_coyote_time && Input.is_action_just_pressed("jump"):
 		velocity.y = jump_velocity
 		used_coyote_time = true
+		AudioStreamManager.play("res://assets/sfx/8bit-SFX-Library/Player/jump-4.wav")
 
 	if is_on_floor() && Input.is_action_just_pressed("jump"):
 		velocity.y = jump_velocity
 		used_coyote_time = true 
+		AudioStreamManager.play("res://assets/sfx/8bit-SFX-Library/Player/jump-4.wav")
 	
 	if not is_on_floor():
 		if Input.is_action_pressed("jump"):
