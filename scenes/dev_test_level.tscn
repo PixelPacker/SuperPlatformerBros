@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://4cj8g20pnqg3"]
+[gd_scene load_steps=12 format=3 uid="uid://4cj8g20pnqg3"]
 
+[ext_resource type="Script" path="res://scripts/levels/level 1.gd" id="1_3umc0"]
 [ext_resource type="Script" path="res://scripts/player/player_camera_controller.gd" id="1_ctke2"]
 [ext_resource type="TileSet" uid="uid://bh7xigjsq8604" path="res://assets/Tile Maps/Pixel Adventure/Foreground Tilemap.tres" id="1_ion05"]
 [ext_resource type="TileSet" uid="uid://dy8tk5p3vv7h6" path="res://assets/Tile Maps/Pixel Adventure/Background Tilemap.tres" id="2_16sp7"]
@@ -14,6 +15,7 @@
 size = Vector2(23, 27)
 
 [node name="Dev Test Level" type="Node2D"]
+script = ExtResource("1_3umc0")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(194, -114)

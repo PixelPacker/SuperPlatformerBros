@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GameManager="*res://scripts/managers/GameManager.gd"
 AudioStreamManager="*res://scripts/managers/AudioStreamManager.gd"
+LevelMusicManager="*res://scripts/managers/LevelMusicManager.gd"
 
 [display]
 
