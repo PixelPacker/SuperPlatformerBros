@@ -21,7 +21,7 @@ func _physics_process(_delta):
 func determine_facing():
 	if(GameManager.player.facing_left):
 		position.x = lerpf((position.x + -cameraOffset), (GameManager.player.position.x + -cameraOffset), camSmoothing)
-	elif(!GameManager.player.facing_left):
+	else:
 		position.x = lerpf((position.x + cameraOffset), (GameManager.player.position.x + cameraOffset), camSmoothing)
 
 func determine_zoom():

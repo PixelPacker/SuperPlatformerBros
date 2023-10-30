@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://4cj8g20pnqg3"]
+[gd_scene load_steps=15 format=3 uid="uid://4cj8g20pnqg3"]
 
 [ext_resource type="Script" path="res://scripts/levels/level 1.gd" id="1_3umc0"]
 [ext_resource type="Script" path="res://scripts/player/player_camera_controller.gd" id="1_ctke2"]
@@ -10,9 +10,14 @@
 [ext_resource type="Material" uid="uid://cr0p6r350y8jf" path="res://assets/particles/player/walking_dust.tres" id="7_662d4"]
 [ext_resource type="Texture2D" uid="uid://d2npii4qrobx" path="res://assets/pixel-adventure-1-pack/Other/Dust Particle.png" id="7_mmmxl"]
 [ext_resource type="Script" path="res://scripts/player/player_particle_controller.gd" id="9_axaet"]
+[ext_resource type="Script" path="res://scripts/objects/flag/flag.gd" id="11_1qycm"]
+[ext_resource type="SpriteFrames" uid="uid://drdu18ub1msij" path="res://assets/Animations/flag.tres" id="12_gk3jq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jsbqh"]
 size = Vector2(23, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mohel"]
+size = Vector2(30, 46)
 
 [node name="Dev Test Level" type="Node2D"]
 script = ExtResource("1_3umc0")
@@ -61,3 +66,24 @@ explosiveness = 0.1
 randomness = 0.1
 fixed_fps = 60
 script = ExtResource("9_axaet")
+
+[node name="Flag" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(20, -128)
+script = ExtResource("11_1qycm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Flag"]
+z_index = 1
+sprite_frames = ExtResource("12_gk3jq")
+animation = &"idle"
+autoplay = "idle"
+frame = 9
+frame_progress = 0.887268
+
+[node name="Area2D" type="Area2D" parent="Flag"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Flag/Area2D"]
+position = Vector2(2, 9)
+shape = SubResource("RectangleShape2D_mohel")
+
+[connection signal="body_entered" from="Flag/Area2D" to="Flag" method="_on_area_2d_body_entered"]

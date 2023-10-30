@@ -1,6 +1,6 @@
 extends Node2D
 
-var bus = "master"
+var bus = "Music"
 var audio_stream : AudioStreamPlayer
 
 func _ready():
